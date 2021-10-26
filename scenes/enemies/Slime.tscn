@@ -1,0 +1,238 @@
+[gd_scene load_steps=37 format=2]
+
+[ext_resource path="res://scenes/enemies/Slime.gd" type="Script" id=1]
+[ext_resource path="res://assets/sprites/enemies/Small Monster/small modeath and damagedt.png" type="Texture" id=2]
+[ext_resource path="res://assets/sounds/pepSound2.ogg" type="AudioStream" id=3]
+[ext_resource path="res://assets/sprites/enemies/Small Monster/small morun.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/enemies/Small Monster/attack.png" type="Texture" id=5]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 39, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 78, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 117, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 156, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 195, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 39, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 78, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 117, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 156, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 195, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 234, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 273, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 312, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 351, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 390, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 429, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 468, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 39, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 78, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 117, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 156, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 195, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 234, 82, 39 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 273, 82, 39 )
+
+[sub_resource type="SpriteFrames" id=28]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"loop": true,
+"name": "MonsterRun",
+"speed": 12.0
+}, {
+"frames": [ SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ) ],
+"loop": true,
+"name": "MonsterAtk",
+"speed": 12.0
+}, {
+"frames": [ SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ) ],
+"loop": true,
+"name": "MonsterDeath",
+"speed": 12.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=29]
+extents = Vector2( 13.1725, 10.7651 )
+
+[sub_resource type="RectangleShape2D" id=30]
+extents = Vector2( 7.44658, 2.45531 )
+
+[sub_resource type="RectangleShape2D" id=31]
+extents = Vector2( 16.45, 7.31779 )
+
+[node name="Slime" type="KinematicBody2D"]
+collision_layer = 16
+collision_mask = 33
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -21.1488 )
+scale = Vector2( 1.97669, 1.97669 )
+frames = SubResource( 28 )
+animation = "MonsterRun"
+frame = 2
+playing = true
+offset = Vector2( 28, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.212227, 2.70154 )
+shape = SubResource( 29 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="floor_checker" type="RayCast2D" parent="."]
+position = Vector2( -0.212227, 0 )
+enabled = true
+cast_to = Vector2( 0, 14 )
+collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="top_checker" type="Area2D" parent="."]
+position = Vector2( -0.212227, 0 )
+collision_layer = 16
+collision_mask = 33
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="top_checker"]
+position = Vector2( -0.0813789, -12.3506 )
+shape = SubResource( 30 )
+
+[node name="sides_checker" type="Area2D" parent="."]
+position = Vector2( -0.212227, 0 )
+collision_layer = 0
+collision_mask = 33
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sides_checker"]
+position = Vector2( 0, 3 )
+shape = SubResource( 31 )
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="SoundSquash" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+pitch_scale = 5.0
+
+[connection signal="body_entered" from="top_checker" to="." method="_on_top_checker_body_entered"]
+[connection signal="area_entered" from="sides_checker" to="." method="_on_sides_checker_area_entered"]
+[connection signal="body_entered" from="sides_checker" to="." method="_on_sides_checker_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

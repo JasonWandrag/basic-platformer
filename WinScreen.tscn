@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://MenuButton.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/KiriFont.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/fonts/Sniglet-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/sounds/switch23.ogg" type="AudioStream" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 65
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 35
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="WinScreen" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 960.0
+margin_bottom = 576.0
+color = Color( 0.160784, 0.462745, 0.819608, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 288.0
+margin_top = 208.0
+margin_right = 677.0
+margin_bottom = 274.0
+custom_fonts/font = SubResource( 1 )
+text = "YOU WIN!"
+
+[node name="MenuButton" type="Button" parent="."]
+margin_left = 392.0
+margin_top = 376.0
+margin_right = 569.0
+margin_bottom = 427.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_hover = Color( 0.721569, 0, 0, 1 )
+text = "Main Menu"
+flat = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SoundButton" type="AudioStreamPlayer" parent="MenuButton"]
+stream = ExtResource( 4 )
+volume_db = -5.0
+
+[connection signal="pressed" from="MenuButton" to="MenuButton" method="_on_MenuButton_pressed"]
